@@ -4,11 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Cooking Recipe AI 🧑‍🍳</title>
   </head>
   <body>
+    <header>
+      <h1>Cooking Recipe AI</h1>
+    </header>
+    <main>
+      <form>
+        <input
+          type="text"
+          placeholder="Enter ingredients..."
+          class="instructions"
+          autofocus
+          required
+          autocomplete="off"
+        />
+        <button type="submit" class="submit-button">Generate Recipe</button>
+      </form>
+      <div class="recipe">The recipe would go here.</div>
+    </main>
     <footer>
-      This AI project was coded by Setareh Rajaei and is open sourced on GitHub
+      This AI project was coded by
+      <a href="https://github.com/StellaRajaei" target="_blank"
+        >Setareh Rajaei</a
+      >
+      and is open sourced on
+      <a
+        href="https://github.com/StellaRajaei/Cooking-Recipe-AI"
+        target="_blank"
+        >GitHub</a
+      >
+      and is hosted on
+      <a href="https://www.render.com" target="_blank">Render</a>.
     </footer>
   </body>
   <script src="app.js"></script>
