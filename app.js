@@ -10,6 +10,9 @@ function displayRecipe(response) {
 function generateRecipe(event) {
   event.preventDefault();
 
+  let recipeElement = document.querySelector("#recipe");
+  recipeElement.classList.remove("hidden");
+
   let instructionsInput = document.querySelector("#user-instructions");
 
   let apiKey = "02c11a0b9530bbo6f48bc95dtef84f9a";
@@ -17,8 +20,13 @@ function generateRecipe(event) {
   let context = `You are a professional chef and recipe developer. Your mission is to generate a simple cooking recipe using basic HTML. Don't make the title as big as the h1 of this document. Sign the recipe with 'SheCodes AI' inside  a <strong> element at the end of the recipe.`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  recipeElement.innerHTML = `Generating a recipe for you with ${instructionsInput.value}`;
+
   axios.get(apiUrl).then(displayRecipe);
 }
 
 let recipeFormElement = document.querySelector("#recipe-generator-form");
 recipeFormElement.addEventListener("submit", generateRecipe);
+
+let recipeElement = document.querySelector("#recipe");
+recipeElement.classList.add("hidden");

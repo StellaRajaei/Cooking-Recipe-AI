@@ -20,15 +20,7 @@ h1 {
   line-height: 1.5;
 }
 form {
-  padding: 30px;
-  background: #fffefa;
-  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-  border-radius: 20px;
-  border-color: #1565c0;
-  border-width: 1px;
-  border-style: solid;
   display: flex;
-  margin-bottom: 30px;
 }
 .instructions {
   padding: 16px;
@@ -39,6 +31,22 @@ form {
   line-height: 20px;
   border-color: #1565c0;
   border-style: solid;
+}
+.form-container {
+  background: #fffefa;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  padding: 25px 20px;
+  border-color: #1565c0;
+  border-width: 1px;
+  border-style: solid;
+}
+.hint {
+  line-height: 1.5;
+  font-size: 12px;
+  margin-top: 5px;
+  opacity: 0.5;
 }
 .submit-button {
   margin-left: 10px;
@@ -62,6 +70,9 @@ form {
   line-height: 2;
   border-left: 3px solid #1565c0;
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
+}
+.hidden {
+  display: none;
 }
 .recipe strong {
   color: #d32f2f;
